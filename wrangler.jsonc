@@ -1,8 +1,14 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "hitung-klik",
-  "compatibility_date": "2026-11-19",
-  "assets": {
-    "directory": "./public"
-  }
+  // ...
+  "pencoret_views": [
+    {
+      "binding": "VIEW",
+      "id": "b0c47fd067714a51920fd4c637a39250"
+    },
+    {
+      "binding": "VIEWS",
+      "id": "b0c47fd067714a51920fd4c637a39250"
+    }
+  ],
+  // ...
 }
