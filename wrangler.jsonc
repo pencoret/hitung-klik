@@ -1,15 +1,11 @@
 {
-  // ...
+  "name": "hitung-klik",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-18",
   "pencoret_views": [
     {
-      "binding": "VIEW",
-      "id": "b0c47fd067714a51920fd4c637a39250"
-    },
-    {
-      "binding": "VIEWS",
+      "binding": "pencoret_views",
       "id": "b0c47fd067714a51920fd4c637a39250"
     }
-  ],
-  // ...
+  ]
 }
- 
