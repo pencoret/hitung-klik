@@ -3,7 +3,6 @@ export default {
     const url = new URL(request.url);
     const slug = url.searchParams.get("slug");
 
-    // Header CORS agar blog Hugo Anda bisa mengakses API ini
     const corsHeaders = {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
@@ -22,11 +21,9 @@ export default {
       });
     }
 
-    // Ambil jumlah klik saat ini dari KV namespace 'pencoret_views'
     let currentViews = await env.pencoret_views.get(slug);
     let count = currentViews ? parseInt(currentViews, 10) : 0;
 
-    // Tambah +1 jika metode request adalah POST
     if (request.method === "POST") {
       count += 1;
       await env.pencoret_views.put(slug, count.toString());
