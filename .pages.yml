@@ -1,0 +1,27 @@
+media: public/images
+
+content:
+  - name: posts
+    label: Artikel
+    type: collection
+    path: src/content/posts
+    fields:
+      - name: title
+        label: Judul Artikel
+        type: string
+      - name: description
+        label: Deskripsi SEO
+        type: text
+      - name: slug
+        label: URL Slug
+        type: string
+      - name: date
+        label: Tanggal Terbit
+        type: date
+      - name: tags
+        label: Tag / Label
+        type: string
+        list: true
+      - name: body
+        label: Isi Artikel
+        type: rich-text
